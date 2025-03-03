@@ -8,7 +8,8 @@ fn main() {
     println!("Searching for {}", query);
     println!("In file {}", filename);
     // dbg!(args);
-    let contents = fs::read_to_string(filename).expect("Should have been able to read the file");
+    let contents = fs::read_to_string(filename)
+        .expect("Should have been able to read the file");
 
     println!("With text:\n{contents}");
 }
